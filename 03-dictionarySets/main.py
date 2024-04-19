@@ -39,7 +39,10 @@ def main():
 
     print(mySet)
 
-    
+    # add a @ before each element in the set if not banana, use lambda function
+    mySet = set(map(lambda x: "@" + x if x != "orange" else x, mySet))
+
+    print(mySet)
 
 if __name__ == "__main__":
     main()
