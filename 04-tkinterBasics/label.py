@@ -1,4 +1,5 @@
 import tkinter as tk
+from tkinter import ttk
 from tkinter.messagebox import showinfo
 
 def clicked():
@@ -14,13 +15,13 @@ def main():
     window.geometry(f"{WIDTH}x{HEIGHT}")
     window.attributes('-topmost', 1) # in primo piano
 
-    label = tk.Label(window, text="Un'immagine", font=("Sono una Stringa", 24))
+    label = ttk.Label(window, text="Un'immagine", font=("Sono una Stringa", 24))
     photo = tk.PhotoImage(file="./assets/logo.png")
     label.config(image=photo, compound='top')
     label.config(justify="left")
     label.pack(expand=True)
 
-    button = tk.Button(window, text="Clicca qui", command=clicked)
+    button = ttk.Button(window, text="Clicca qui", command=clicked)
     button.pack(expand=True)
   
 
