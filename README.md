@@ -266,7 +266,7 @@ x <= y # minore o uguale
 
 x and y # True se entrambi sono True
 x or y # True se uno dei due è True
-not x # True se x è False (ma anche `!x` funziona)
+not x # True se x è False
 ```
 
 ## Lambda
@@ -351,6 +351,8 @@ import mymodule
 mymodule.greeting("Jonathan")
 print(mymodule.person1["age"])
 ```
+
+<div class="page" />
 
 ## Esempio di main
 
